@@ -25,7 +25,7 @@ Builder.load_string("""
                 root.manager.transition.direction = "left" 
                 
         Button:
-            font_size: 50
+            font_size: '20sp'
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
             height: 200
@@ -35,14 +35,24 @@ Builder.load_string("""
                 root.manager.transition.direction = "left"         
                 
         Button:
-            font_size: 50
+            font_size: '20sp'
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
-            height: 200
-            text: "KSquared-Mathematics : Limits Calculator"
+            height: 100
+            text: "KSquared-Mathematics :"
             on_release:
                 app.root.current = "Menu"
-                root.manager.transition.direction = "left"                 
+                root.manager.transition.direction = "left"   
+                
+        Button:
+            font_size: '20sp'
+            background_color: 0, 0 , 0 , 1
+            size_hint_y: None
+            height: 100
+            text: "Limits Calculator"
+            on_release:
+                app.root.current = "Menu"
+                root.manager.transition.direction = "left"   
                 
 """)
 
@@ -66,14 +76,14 @@ Builder.load_string("""
             height: self.minimum_height
             
             Label:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
                 text: "Menu"
                     
             Button:
-                font_size: 75
+                font_size: '20sp'
                 background_color: 1, 1, 0, 1
                 size_hint_y: None
                 height: 200
@@ -84,7 +94,7 @@ Builder.load_string("""
                     root.manager.transition.direction = "left"
                     
             Button:
-                font_size: 75
+                font_size: '20sp'
                 background_color: 1, 0, 1, 1
                 size_hint_y: None
                 height: 200
@@ -95,7 +105,7 @@ Builder.load_string("""
                     root.manager.transition.direction = "left"
                     
             Button:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -105,7 +115,7 @@ Builder.load_string("""
                     webbrowser.open('https://www.ksquaredmathematics.com/subscribe') 
                     
             Label:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -139,7 +149,7 @@ Builder.load_string("""
             height: self.minimum_height
             
             Label:
-                font_size: 50
+                font_size: '15sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -148,7 +158,7 @@ Builder.load_string("""
             Button:
                 id: steps
                 text: "Menu"   
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 background_color: 0, 0 , 1 , 1
                 height: 200
@@ -158,14 +168,14 @@ Builder.load_string("""
                     root.manager.transition.direction = "right" 
                     
             Label:
-                font_size: 40
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
                 text: "Limits Calculators v0.1"
                 
             Label:
-                font_size: 40
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -193,7 +203,7 @@ Builder.load_string("""
             height: self.minimum_height
             
             Label:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -211,7 +221,7 @@ Builder.load_string("""
                 Button:
                     id: steps
                     text: "Menu"   
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 0, 0 , 1 , 1
                     height: 200
@@ -223,7 +233,7 @@ Builder.load_string("""
                 Button:
                     id: steps
                     text: "Clear All"   
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 1, 0 , 0 , 1
                     height: 200
@@ -239,9 +249,9 @@ Builder.load_string("""
                 text: entry.text
                 hint_text: "lim:"
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
-                height: 125
+                height: '20sp'
                 padding: 10              
             
             TextInput:
@@ -249,9 +259,9 @@ Builder.load_string("""
                 text: range.text
                 hint_text: "x -> n:"
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
-                height: 125
+                height: '20sp'
                 padding: 10, 10
                 
             TextInput:
@@ -259,9 +269,9 @@ Builder.load_string("""
                 text: direction.text
                 hint_text: "direction: + or -"
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
-                height: 125
+                height: '20sp'
                 padding: 10, 10
                 input_filter: lambda text, from_undo: text[:1 - len(direction.text)]
             
@@ -276,7 +286,7 @@ Builder.load_string("""
                 
                 Button:
                     text: "\u221E"  
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 1, 1, 0 , 1
                     height: 200
@@ -286,7 +296,7 @@ Builder.load_string("""
                         
                 Button:
                     text: "-\u221E"  
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 0, 1, 1, 1
                     height: 200
@@ -297,7 +307,7 @@ Builder.load_string("""
             Button:
                 id: steps
                 text: "Limit"   
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 background_color: 0, 1, 0 , 1
                 height: 200
@@ -388,14 +398,14 @@ class Limits(Screen):
                 print("Answer: ",Answer)
                 
                 
-            self.ids.list_of_steps.add_widget(Label(text= "The Limit of :" ,font_size = 50, size_hint_y= None, height=100))
-            self.ids.list_of_steps.add_widget(Label(text= "Lim (x -> " + str(limit) + ") " + direction + " : " + str(func).replace("**","^") ,font_size = 50, size_hint_y= None, height=100))
-            self.ids.list_of_steps.add_widget(Label(text= "=" ,font_size = 50, size_hint_y= None, height=100))
-            self.ids.list_of_steps.add_widget(Label(text= str(Answer).replace("**","^") ,font_size = 50, size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= "The Limit of :" ,font_size = '15sp', size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= "Lim (x -> " + str(limit) + ") " + direction + " : " + str(func).replace("**","^") ,font_size = '15sp', size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= "=" ,font_size = '15sp', size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= str(Answer).replace("**","^") ,font_size = '15sp', size_hint_y= None, height=100))
             self.layouts.append(layout)
             
         except Exception:
-            self.ids.list_of_steps.add_widget(Label(text= "Invalid Input" ,font_size = 50, size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= "Invalid Input" ,font_size = '15sp', size_hint_y= None, height=100))
             self.layouts.append(layout)
             
 class Homepage(Screen):
