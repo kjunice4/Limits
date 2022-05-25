@@ -124,8 +124,8 @@ Builder.load_string("""
             Image:
                 source: 'KSquared_QR.png'
                 size_hint_y: None
-                height: 1000
-                width: 1000
+                height: 800
+                width: 800
                 
 """)
 
@@ -251,7 +251,7 @@ Builder.load_string("""
                 multiline: False
                 font_size: '20sp'
                 size_hint_y: None
-                height: '20sp'
+                height: 200
                 padding: 10              
             
             TextInput:
@@ -261,7 +261,7 @@ Builder.load_string("""
                 multiline: False
                 font_size: '20sp'
                 size_hint_y: None
-                height: '20sp'
+                height: 200
                 padding: 10, 10
                 
             TextInput:
@@ -271,7 +271,7 @@ Builder.load_string("""
                 multiline: False
                 font_size: '20sp'
                 size_hint_y: None
-                height: '20sp'
+                height: 200
                 padding: 10, 10
                 input_filter: lambda text, from_undo: text[:1 - len(direction.text)]
             
